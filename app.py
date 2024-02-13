@@ -9,7 +9,7 @@ import os
 ## Function to load OpenAI model and get responses
 
 def get_openai_response(question):
-    llm =  OpenAI(openai_api_key='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', model_name="text-davinci-003", temperature=0.6)
+    llm =  OpenAI(openai_api_key='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', model_name="gpt-3.5-turbo-instruct", temperature=0.6)
     response = llm(question)
     return response
 
